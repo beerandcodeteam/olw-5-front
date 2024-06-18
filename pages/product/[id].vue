@@ -51,7 +51,7 @@ await callOnce(async () => {
                   <h2 class="sr-only">Images</h2>
 
                   <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-3 lg:gap-8">
-                    <img v-for="(image, index) in product.skus[0].images" :src="`${config.public.s3url}${image.url}`" :key="image.id" :class="[index == 0 ? 'lg:col-span-2 lg:row-span-2' : 'hidden lg:block', 'rounded-lg']" />
+                    <img v-for="(image, index) in product.skus[0].images" :src="`${config.public.s3url}/${image.url}`" :key="image.id" :class="[index == 0 ? 'lg:col-span-2 lg:row-span-2' : 'hidden lg:block', 'rounded-lg']" />
 
                   </div>
                 </div>

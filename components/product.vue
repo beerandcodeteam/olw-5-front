@@ -16,7 +16,7 @@
       <div class="mt-6 grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-6 md:grid-cols-4 md:gap-y-2 lg:gap-x-8">
         <NuxtLink :to="{name: 'product-id', params: {id: product.id}}" v-for="product in products" :key="product.id" class="group relative">
           <div class="h-56 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:h-72 xl:h-80">
-            <img :src="`${config.public.s3url}${product.skus[0].images[0].url}`"  class="h-full w-full object-cover object-center" />
+            <img :src="`${config.public.s3url}/${product.skus[0].images[0].url}`"  class="h-full w-full object-cover object-center" />
           </div>
           <div class="mt-4 flex justify-between">
             <div>
